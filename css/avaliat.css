@@ -60,3 +60,12 @@
     font-weight: 400;
     color: rgb(18 18 18 / 70%);
   }
+
+  @media (max-width: 470px) {
+    .testimonials-content {
+      display: flex;
+      flex-direction: column;
+      padding-inline: 50px;
+      margin: 0;
+    }
+  }
