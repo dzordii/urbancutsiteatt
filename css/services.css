@@ -157,12 +157,18 @@
       box-shadow: rgba(0, 0, 0, 0.712) 0px 7px 29px 0px;
     }
   }
-  @media screen and (max-width: 550px) {
+  @media (max-width: 550px) {
     .carousel img {
       width: 100%;
     }
-    .services-title  {
+
+    .services-title h1 {
       font-size: 2rem;
+    }
+
+    .services-title span {
+      text-align: center;
+      font-size: 1rem;
     }
 
     .wrapper::after {
