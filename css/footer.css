@@ -1,0 +1,61 @@
+.footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 40px 0;
+    font-family: 'Anton', sans-serif;
+    justify-content: center;
+  }
+
+  .footer span {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Layout do conteúdo do rodapé */
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Logo */
+  .footer-logo img {
+    width: 100px;
+    margin-bottom: 15px;
+  }
+  
+  /* Títulos das seções */
+  .footer-box h3 {
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  
+  /* Links e texto nas seções */
+  .footer-box a {
+    display: flex;
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+  }
+
+  .footer-box a:hover {
+    color: rgb(172, 4, 4);
+  }
+  
+  .footer-box p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #ffffff;
+  }
+  
+  iframe {
+    width: 200px;
+    height: 100px;
+  }

@@ -1,0 +1,45 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  scroll-padding-top: 3rem;
+  font-family: 'Anton';
+  letter-spacing: 0.5px;
+}
+/* Variables */
+:root {
+  --text-color: #000000;
+  --container-color: #0f0f0f;
+  --red: #b22617;
+  --bg-color: #fff;
+  --text-alter-color: #94908e;
+}
+body {
+  color: var(--text-color);
+  background: black;
+}
+/* Custom Scroll Bar */
+html::-webkit-scrollbar {
+  width: 0.5rem;
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+  background: var(--red);
+}
+
+header {
+  padding-inline: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--red);
+  box-shadow: rgb(0, 0, 0) 0px 7px 29px 0px;
+  z-index: 100;
+}
+header.scrolled {
+  background-color: #000; /* Altere a cor para preto */
+  box-shadow: rgba(255, 255, 255, 0.199) 0px 7px 29px 0px;
+}

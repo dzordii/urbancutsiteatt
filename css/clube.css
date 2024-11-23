@@ -1,0 +1,165 @@
+.clube-section {
+    background-color: var(--red);
+}
+
+.clube-container {
+    max-width: 1400px;
+    width: 1300px;
+    margin-top: 5rem;
+    background-color: var(--red);
+    display: flex;
+    overflow: hidden;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between; /* Adicionando espaço entre os containers */
+}
+
+.left-side {
+    margin-block: 120px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;  /* Alinhado ao topo */
+    gap: 14px; /* Aumentei o gap para um espaçamento mais visível entre os itens */
+}
+
+.text {
+    color: white;
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+    font-size: 45px;
+    margin-left: 140px;
+    line-height: 60px;
+    text-align: left;  /* Garantir que o texto comece da esquerda */
+}
+
+.button {
+    margin-left: 140px;
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 12px;
+}
+
+.button a:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.05);
+    transition: 0.5s ease;
+}
+
+.button a {
+    font-size: 20px;
+    background: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 50px;
+    padding: 30px 60px;
+}
+
+.left-side img {
+    display: flex;
+    justify-content: flex-start;
+    width: 160px;
+    height: 160px;
+}
+
+.right-side {
+    flex: 1;
+    height: 924px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 0;
+    margin-left: 0; 
+}
+
+.right-side img {
+    width: 720px;
+    height: 820px;
+    object-fit: cover;
+    overflow: auto;
+    margin-left: 0;
+    margin-top: auto;
+}
+
+/* Media Queries para telas menores (ex: dispositivos móveis e tablets) */
+@media (max-width: 768px) {
+    .clube-container {
+        flex-direction: column;  /* Coloca as caixas uma abaixo da outra */
+        width: 100%;  /* Garante que o container use toda a largura da tela */
+        margin-top: 6rem;
+        padding-top: 2rem;
+        margin-bottom: 0;
+    }
+
+    .clube-section {
+        padding: 0;
+    }
+    
+    .left-side, .right-side {
+        width: 100%;  /* Ajusta a largura das caixas para 100% */
+        margin: 0;
+    }
+
+    .text {
+        text-align: center;
+        align-items: center;
+        font-size: 36px;  /* Ajusta o tamanho da fonte para telas menores */
+        margin-inline: 40px;  /* Ajusta a margem esquerda */
+    }
+
+    .button {
+        align-items: center;
+        justify-content: center;
+        margin-inline: 20px;  /* Ajusta a margem para os botões */
+    }
+
+    .button a {
+        font-size: 18px;  /* Ajusta o tamanho da fonte dos botões */
+        padding: 20px 40px;  /* Ajusta o padding dos botões */
+    }
+
+    .left-side img {
+        display: none;
+        align-items: center;
+        width: 120px;  /* Reduz o tamanho da imagem em telas menores */
+        height: 120px;  /* Ajusta a altura da imagem */
+    }
+
+    .right-side img {
+        margin-inline: auto; 
+        width: 380px;
+        height: 380px;
+        padding-left: 20px;
+    }
+}
+
+/* Media Queries para telas ainda menores (ex: celulares em modo retrato) */
+@media (max-width: 480px) {
+    .text {
+        text-align: center;
+        align-items: center;
+        font-size: 30px;  /* Ajusta ainda mais o tamanho da fonte */
+        line-height: 40px;
+    }
+
+    .button a {
+        font-size: 16px;  /* Ajusta o tamanho da fonte dos botões */
+        padding: 15px 30px;  /* Ajusta o padding dos botões */
+    }
+
+    .left-side img {
+        width: 100px;  /* Ajusta a imagem para telas pequenas */
+        height: 100px;  /* Ajusta a altura da imagem */
+    }
+
+    .right-side img {
+        margin-inline: auto; 
+        padding-left: 20px;
+        width: 380px;
+        height: 380px;
+    }
+}

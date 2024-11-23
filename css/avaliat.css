@@ -1,0 +1,61 @@
+.testimonials {
+    background: rgb(255, 255, 255);
+  }
+  
+  .heading {
+    text-align: center;
+    color: black;
+  }
+  
+  .testimonials h2 {
+    padding-bottom: 0.5rem;
+    font-family: 'Chewy';
+    font-size: 4rem;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+  }
+  
+  .testimonials-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+  .t-box {
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(3, 3, 3, 0.233) 0px 7px 29px 0px;
+    padding: 30px;
+    border-radius: 10px;
+  }
+  .t-box .stars {
+    color: rgb(224, 194, 21);
+    font-size: 18px;
+  }
+  .t-box p {
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    margin: 10px 0;
+  }
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .profile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #000000;
+    object-fit: cover;
+  }
+  .profile-data h3 {
+    font-family: 'Anton';
+    font-size: 1rem;
+    line-height: 1rem;
+    font-weight: 200;
+  }
+  .profile-data span {
+    font-size: 0.94rem;
+    font-weight: 400;
+    color: rgb(18 18 18 / 70%);
+  }
