@@ -11,7 +11,7 @@
     overflow: hidden;
     margin: auto;
     align-items: center;
-    justify-content: space-between; /* Adicionando espaço entre os containers */
+    justify-content: space-between;
 }
 
 .left-side {
@@ -19,8 +19,8 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;  /* Alinhado ao topo */
-    gap: 14px; /* Aumentei o gap para um espaçamento mais visível entre os itens */
+    justify-content: flex-start;  
+    gap: 14px;
 }
 
 .text {
@@ -29,8 +29,8 @@
     font-weight: 400;
     font-size: 45px;
     margin-left: 140px;
-    line-height: 60px;
-    text-align: left;  /* Garantir que o texto comece da esquerda */
+    line-height: 50px;
+    text-align: left; 
 }
 
 .button {
@@ -85,11 +85,10 @@
     margin-top: auto;
 }
 
-/* Media Queries para telas menores (ex: dispositivos móveis e tablets) */
 @media (max-width: 768px) {
     .clube-container {
-        flex-direction: column;  /* Coloca as caixas uma abaixo da outra */
-        width: 100%;  /* Garante que o container use toda a largura da tela */
+        flex-direction: column; 
+        width: 100%;  
         margin-top: 6rem;
         padding-top: 2rem;
         margin-bottom: 0;
@@ -100,33 +99,33 @@
     }
     
     .left-side, .right-side {
-        width: 100%;  /* Ajusta a largura das caixas para 100% */
+        width: 100%; 
         margin: 0;
     }
 
     .text {
         text-align: center;
         align-items: center;
-        font-size: 36px;  /* Ajusta o tamanho da fonte para telas menores */
-        margin-inline: 40px;  /* Ajusta a margem esquerda */
+        font-size: 36px;  
+        margin-inline: 40px; 
     }
 
     .button {
         align-items: center;
         justify-content: center;
-        margin-inline: 20px;  /* Ajusta a margem para os botões */
+        margin-inline: 20px;  
     }
 
     .button a {
-        font-size: 18px;  /* Ajusta o tamanho da fonte dos botões */
-        padding: 20px 40px;  /* Ajusta o padding dos botões */
+        font-size: 18px; 
+        padding: 20px 40px;  
     }
 
     .left-side img {
         display: none;
         align-items: center;
-        width: 120px;  /* Reduz o tamanho da imagem em telas menores */
-        height: 120px;  /* Ajusta a altura da imagem */
+        width: 120px;  
+        height: 120px; 
     }
 
     .right-side img {
@@ -137,23 +136,22 @@
     }
 }
 
-/* Media Queries para telas ainda menores (ex: celulares em modo retrato) */
 @media (max-width: 480px) {
     .text {
         text-align: center;
         align-items: center;
-        font-size: 30px;  /* Ajusta ainda mais o tamanho da fonte */
+        font-size: 30px;  
         line-height: 40px;
     }
 
     .button a {
-        font-size: 16px;  /* Ajusta o tamanho da fonte dos botões */
-        padding: 15px 30px;  /* Ajusta o padding dos botões */
+        font-size: 16px;  
+        padding: 15px 30px; 
     }
 
     .left-side img {
-        width: 100px;  /* Ajusta a imagem para telas pequenas */
-        height: 100px;  /* Ajusta a altura da imagem */
+        width: 100px; 
+        height: 100px;  
     }
 
     .right-side img {

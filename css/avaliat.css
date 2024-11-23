@@ -7,19 +7,40 @@
     color: black;
   }
   
-  .testimonials h2 {
-    padding-block: 4rem;
-    font-family: 'Chewy';
+  .avaliattitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-block: 2rem;
+  }
+
+  .avaliattitle h1 {
+    margin: 0;
     font-size: 4rem;
-    text-decoration: none;
-    text-underline-offset: 6px;
+    font-family: 'Chewy';
+    font-weight: 300;
+    text-align: center;
+    text-decoration: var(--red) underline;
+    text-underline-offset: 4px;
+    text-underline-position: 10px;
+  }
+
+  .avaliattitle span {
+    line-height: 20px;
+    padding: 0;
+    color: black;
+    font-size: 22px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
   }
   
   .testimonials-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
-    padding-bottom: 4rem;
+    padding-bottom: 6rem;
     padding-inline: 8rem;
   }
   .t-box {

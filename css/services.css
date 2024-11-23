@@ -1,14 +1,31 @@
 .services-title {
+  padding-block: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-title h1 {
     background: black;
     color: white;
-    padding-top: 40px;
-    padding-block: 4rem;
     margin: 0;
     font-size: 4rem; /* Espaçamento entre o título e o carrossel */
     font-family: 'Chewy';
     font-weight: 300;
     text-align: center;
-    text-decoration: none;
+    text-decoration: var(--red) underline;
+    text-underline-offset: 4px;
+    text-underline-position: 10px;
+  }
+  
+  .services-title span {
+    line-height: 20px;
+    padding: 0;
+    color: white;
+    font-size: 22px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
   }
   
   .services-section {
