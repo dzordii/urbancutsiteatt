@@ -30,7 +30,6 @@
     color: black;
     background: white;
     padding: 10px;
-    border-radius: 10px;
     transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
   }
 
@@ -44,6 +43,25 @@
     color: rgb(12, 12, 12);
     border-radius: 10px;
     transform: scale(1.05);
+    transition: 0.5s ease;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 4px;
+  }
+
+  .scrolled .nav-link:hover {
+    color: var(--red);
+    border-radius: 10px;
+    transform: scale(1.05);
+    transition: 0.5s ease;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 4px;
+  }
+
+  .scrolled .nav-link2:hover {
+    background-color: var(--red);
+    color: white;
     transition: 0.5s ease;
   }
   .nav-icons {

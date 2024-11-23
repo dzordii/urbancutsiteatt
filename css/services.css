@@ -1,6 +1,6 @@
 .services-title {
+    background: black;
     color: white;
-    background: var(--red);
     padding-top: 40px;
     padding-block: 4rem;
     margin: 0;
@@ -12,13 +12,13 @@
   }
   
   .services-section {
+    background-color: black;
     display: flex;
     padding: 0 35px;
     padding-bottom: 2rem;
     align-items: center;
     justify-content: center;
     min-height: 50vh;
-    background-color: var(--red);
   }
   
   /* Estilos do wrapper */
@@ -34,9 +34,9 @@
     top: 0;
     left: 0;
     bottom: 0;
-    width: 250px; /* Ajuste a largura conforme necessário */
+    width: 200px; /* Ajuste a largura conforme necessário */
     height: 340px;
-    background: linear-gradient(to right, var(--red), rgba(0, 0, 0, 0));
+    background: linear-gradient(to right, black, rgba(0, 0, 0, 0));
     pointer-events: none; /* Permite clique nos itens do carrossel */
     z-index: 2; /* Coloca o degradê sobre o carrossel */
   }
@@ -48,9 +48,9 @@
     top: 0;
     right: 0;
     bottom: 0;
-    width: 250px; /* Ajuste a largura conforme necessário */
+    width: 200px; /* Ajuste a largura conforme necessário */
     height: 340px;
-    background: linear-gradient(to left, var(--red), rgba(0, 0, 0, 0));
+    background: linear-gradient(to left, black, rgba(0, 0, 0, 0));
     pointer-events: none; /* Permite clique nos itens do carrossel */
     z-index: 2; /* Coloca o degradê sobre o carrossel */
   }
@@ -118,7 +118,7 @@
       top: 0;
       left: 0;
       bottom: 0;
-      width: 150px; /* Ajuste a largura conforme necessário */
+      width: 100px; /* Ajuste a largura conforme necessário */
       background: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0));
       pointer-events: none; /* Permite clique nos itens do carrossel */
       z-index: 2; /* Coloca o degradê sobre o carrossel */
@@ -131,7 +131,7 @@
       top: 0;
       right: 0;
       bottom: 0;
-      width: 150px; /* Ajuste a largura conforme necessário */
+      width: 100px; /* Ajuste a largura conforme necessário */
       background: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0));
       pointer-events: none; /* Permite clique nos itens do carrossel */
       z-index: 2; /* Coloca o degradê sobre o carrossel */
@@ -146,5 +146,13 @@
     }
     .services-title  {
       font-size: 2rem;
+    }
+
+    .wrapper::after {
+      width: 70px;
+    }
+
+    .wrapper::before {
+      width: 70px;
     }
   }
