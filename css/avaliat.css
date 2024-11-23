@@ -1,4 +1,4 @@
-.testimonials {
+  .testimonials {
     background: rgb(255, 255, 255);
   }
   
@@ -8,10 +8,10 @@
   }
   
   .testimonials h2 {
-    padding-bottom: 0.5rem;
+    padding-block: 4rem;
     font-family: 'Chewy';
     font-size: 4rem;
-    text-decoration: underline;
+    text-decoration: none;
     text-underline-offset: 6px;
   }
   
@@ -19,7 +19,8 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
-    padding: 2rem;
+    padding-bottom: 4rem;
+    padding-inline: 8rem;
   }
   .t-box {
     background: rgb(255, 255, 255);
