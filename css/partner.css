@@ -1,84 +1,104 @@
 .partner-section {
-    padding: 4rem 1rem; /* Padding dinâmico para responsividade */
-    background-color: var(--red);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  max-width: 1400px; /* Máxima largura do contêiner */
+  width: 100%; /* O contêiner ocupará 100% da largura disponível */
+  height: auto;
+  display: flex;
+  margin: 0 auto; /* Centraliza o contêiner */
+  align-items: center;
+  padding-block: 4rem;
+  background-color: black;
+}
+
+.partnes-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding-inline: 4rem;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.partner-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  padding-inline: 2rem;
+}
+
+.partner-text h1 {
+  font-family: 'Chewy', sans-serif;
+  font-weight: 400;
+  font-size: 4rem;
+  color: white;
+  -webkit-text-decoration: underline;
+  text-decoration: var(--red) underline;
+  text-underline-offset: 4px;
+  text-underline-position: 10px;
+}
+
+.partner-text span {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+}
+
+.images-box img {
+  width: 120px;
+  height: 120px;
+  justify-content: space-between;
+}
+
+/* Responsive Area */
+
+/* Tablets and below (up to 768px) */
+@media (max-width: 768px) {
+  .partner-section {
+    padding-block: 2rem;
   }
-  
-  /* Título */
-  .partner-title {
-    text-align: center;
-    font-size: 4rem;
-    font-weight: bold;
-    color: #ffffff;
-    font-family: 'Chewy';
-    margin-bottom: 40px;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
+
+  .partner-text h1 {
+    font-size: 2.5rem;
   }
-  
-  /* Grade Responsiva */
-  .partner-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajuste automático */
-    gap: 20px; /* Espaçamento entre os blocos */
-    width: 100%; /* Ocupa 100% da largura */
-    max-width: 1200px; /* Limite de largura */
-    margin: 0 auto; /* Centraliza a grade */
+
+  .partner-text span {
+    font-size: 1.2rem;
   }
-  
-  /* Cartões de Parceiros */
-  .partner-card {
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+  .images-box img {
+    width: 80px;
+    height: 80px;
   }
-  
-  .partner-logo {
-    max-width: 100px;
-    margin-bottom: 15px;
+
+  .partnes-container {
+    padding-inline: 2rem;
   }
-  
-  /* Bloco de Destaque */
-  .partner-highlight {
-    grid-column: 1 / -1; /* Ocupa toda a largura */
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    padding: 40px;
-    border-radius: 8px;
+}
+
+/* Mobile phones (up to 480px) */
+@media (max-width: 480px) {
+  .partner-section {
+    padding-block: 1.5rem;
+  }
+
+  .partner-text h1 {
     font-size: 2rem;
-    font-weight: bold;
   }
-  
-  /* Responsividade */
-  
-  /* Telas médias (tablets) */
-  @media (max-width: 1024px) {
-    .partner-title {
-      font-size: 2.5rem;
-    }
-    .partner-highlight {
-      font-size: 1.8rem;
-      padding: 20px;
-    }
+
+  .partner-text span {
+    font-size: 1rem;
   }
-  
-  /* Telas pequenas (smartphones) */
-  @media (max-width: 768px) {
-    .partner-title {
-      font-size: 2rem;
-    }
-    .partner-card {
-      padding: 15px;
-    }
-    .partner-highlight {
-      font-size: 1.5rem;
-      padding: 15px;
-    }
+
+  .images-box img {
+    width: 60px;
+    height: 60px;
   }
+
+  .partnes-container {
+    padding-inline: 1rem;
+  }
+}
